@@ -13,7 +13,8 @@ function btnEncriptar () {
     const textoEncriptado = encriptar(textArea.value);
     mensaje.value = textoEncriptado;
     textArea.value = "";
-    mensaje.style.backgroundimage = "none"; // la imagen no desaparece ARREGLAR!
+    mensaje.style.backgroundimage = "none"; // la imagen no desaparece ARREGLAR! 
+    //haz una variable que capture solo el id de la imagen y ese lo haces desaparecer
 }
 
 function encriptar(stringEncriptada) {
