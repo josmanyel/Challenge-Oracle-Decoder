@@ -93,6 +93,7 @@ main {
 }
 
 .btn-encriptar {
+    display: flex;
     padding: 1px 27px;
     border-radius: 15px;
     flex: none;
@@ -100,17 +101,20 @@ main {
     flex-grow: 0;
     border: 3px solid deepskyblue;
     box-shadow: 20px 20px 30px -20px deepskyblue;
+    cursor: pointer;
 }
 
 .btn-desencriptar {
+    display: flex;
     background-color: #08F13A;
     border-radius: 15px;
     flex: none;
-    order: 0;
+    order: 1;
     flex-grow: 0;
     border: 3px solid deepskyblue;
     color: darkblue;
     box-shadow: 20px 20px 30px -20px deepskyblue;
+    cursor: pointer;
 }
 
 .copiar {
@@ -121,7 +125,7 @@ main {
     top: 530px;
     border: 3px solid deepskyblue;
     border-radius: 15px;
-    text-transform: lowercase;
     text-align: center;
     box-shadow: 20px 20px 30px -20px deepskyblue;
+    cursor: pointer;
 }
