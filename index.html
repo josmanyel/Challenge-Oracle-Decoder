@@ -1,6 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,30 +12,55 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Tai+Heritage+Pro:wght@700&display=swap" rel="stylesheet">
     <title>Decoder</title>
+
 </head>
+
 <body>
+
      <header>
-        <h1 class="logo">a</h1>
-     </header>  
+        <img src="D:/1. CURSOS 2022/4. DEV/ONE_Oracle Next Education/NOTAS DE CHALLENGE 1 DECODER/DECODER/Logo_verde.png" alt="logo de alura" class="logo">
+     </header> 
+
      <main>
+
         <section class="section">
+
             <h1>FAST ENCRYPTOR</h1>
+
             <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+
             <div>
+
                 <h6 class="informacion">&#9888; Solo letras minúsculas y sin acentos</h6>
+                <h6 class="informacion2">&#9888; CLIQUEA de nuevo aquí para REINICIAR</h6>
+
             </div>
+
             <div class="botones">
+
                 <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
                 <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+
             </div>
+
         </section>
+
         <section>
-            <textarea class="mensaje" cols="20" rows="10" placeholder=""></textarea>
+
+            <textarea id="myInput" class="mensaje" cols="20" rows="10" placeholder=""></textarea>
+
             <div>
-                <button type="button" class="copiar">Copiar</button>
+
+                <button class="copiar" onclick="myFunction()">Copiar</button>
+                
             </div>
+
         </section>
+
      </main>
+
     <script src="script.js"></script>
+
 </body>
+
 </html>

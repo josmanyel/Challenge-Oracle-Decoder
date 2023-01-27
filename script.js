@@ -7,14 +7,13 @@ const mensaje = document.querySelector(".mensaje");
 // `La letra "o" es convertida para "ober"`
 // `La letra "u" es convertida para "ufat"`
 
-
-
 function btnEncriptar () {
+
     const textoEncriptado = encriptar(textArea.value);
     mensaje.value = textoEncriptado;
     textArea.value = "";
-    mensaje.style.backgroundimage = "none"; // la imagen no desaparece ARREGLAR! 
-    //haz una variable que capture solo el id de la imagen y ese lo haces desaparecer
+    mensaje.style.backgroundImage = "none";  
+    
 }
 
 function encriptar(stringEncriptada) {
@@ -47,3 +46,18 @@ function desencriptar(stringDesencriptada) {
     }
     return stringDesencriptada;
 }
+
+function myFunction() {    //función del botón de copiar
+    // Get the text field
+    var copyText = document.getElementById("myInput");
+  
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+  
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+    
+    // Alert the copied text
+    alert("Texto Copiado: " + copyText.value);
+  }

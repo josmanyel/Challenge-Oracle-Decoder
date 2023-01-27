@@ -1,6 +1,5 @@
 *{
     background-color:  #040c2c;
-    font-family: 'Inter', sans-serif;
     font-family: 'Tai Heritage Pro', serif;
     font-weight: 400;
     font-size: 32px;
@@ -10,10 +9,11 @@
 
 .logo {
     
-    margin-left: 30px;
-    font-size: 70px;
+    margin-top: 25px;
+    margin-left: 0px;
     text-shadow: 5px 5px 2px black, 0 0 #08F13A, 0 0 0.3em #08F13A;
     line-height: 0%;
+    width: 9%;
 }
 
 main {
@@ -47,36 +47,21 @@ main {
     .text-area:focus {
         outline: none;
     }
-    .mensaje:focus {
-        outline: none;
-        font-size: 20px;
-    }
-
-.mensaje {
-    background-image: url("D:/1. CURSOS 2022/4. DEV/ONE_Oracle Next Education/NOTAS DE CHALLENGE 1 DECODER/DECODER/Muñeco verde.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 200px;
-    background-size: 200px 200px;
-    position: absolute;
-    padding: 10px 5px 0px 15px;
-    width: 200px;
-    height: 400px;
-    left: 750px;
-    top: 90px;
-    border: 3px solid deepskyblue;
-    border-radius: 15px;
-    text-transform: lowercase;
-    text-align: center;
-    box-shadow: 20px 20px 30px -20px deepskyblue;
-}
-
+    
 .informacion {
     position: absolute;
     left: 280px;
     top: 270px;
     color: #08F13A;
     font-size:small;
+}
+
+.informacion2 {
+    position: absolute;
+    left: 410px;
+    top: 470px;
+    color: #08F13A;
+    font-size: 9px;
 }
 
 .botones {
@@ -115,6 +100,31 @@ main {
     color: darkblue;
     box-shadow: 20px 20px 30px -20px deepskyblue;
     cursor: pointer;
+}
+
+.mensaje {
+    background-image: url("D:/1. CURSOS 2022/4. DEV/ONE_Oracle Next Education/NOTAS DE CHALLENGE 1 DECODER/DECODER/Muñeco verde.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 200px;
+    background-size: 200px 200px;
+    position: absolute;          /* lineas de posición */
+    padding: 10px 5px 0px 15px;  
+    width: 200px;
+    height: 400px;
+    left: 750px;
+    top: 90px;                   /* lineas de posición */
+    border: 3px solid deepskyblue;  /* lineas de borde*/
+    border-radius: 15px;              /* lieas de borde*/
+    text-transform: lowercase;        /* lineas de texto */
+    font-size: 20px;
+    text-align: center;               /* lineas de texto */
+    box-shadow: 20px 20px 30px -20px deepskyblue;  /* lineas de sombra */
+}
+
+.mensaje:focus {
+    outline: none;
+    
 }
 
 .copiar {
