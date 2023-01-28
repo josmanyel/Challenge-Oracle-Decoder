@@ -4,7 +4,7 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    color: rgb(8, 241, 58);
+    color: #08F13A;
 }
 
 .logo {
@@ -35,7 +35,7 @@ main {
     width: 430px;
     height: 55px;
     left: 170px;
-    top: 200px;
+    top: 140px;
     border: 3px solid deepskyblue;
     border-radius: 15px;
     text-transform: lowercase;
@@ -51,7 +51,7 @@ main {
 .informacion {
     position: absolute;
     left: 280px;
-    top: 270px;
+    top: 210px;
     color: #08F13A;
     font-size:small;
 }
@@ -59,7 +59,7 @@ main {
 .informacion2 {
     position: absolute;
     left: 410px;
-    top: 470px;
+    top: 360px;
     color: #08F13A;
     font-size: 9px;
 }
@@ -74,7 +74,7 @@ main {
     width: 700px;
     height: 55px;
     left: 180px;
-    top: 530px;
+    top: 420px;
 }
 
 .btn-encriptar {
@@ -86,7 +86,14 @@ main {
     flex-grow: 0;
     border: 3px solid deepskyblue;
     box-shadow: 20px 20px 30px -20px deepskyblue;
+    transition-duration: 0.4s;
     cursor: pointer;
+}
+
+.btn-encriptar:hover {
+    background-color: #08F13A;
+    color: #040c2c;
+    transform: scale(1.1);
 }
 
 .btn-desencriptar {
@@ -99,14 +106,21 @@ main {
     border: 3px solid deepskyblue;
     color: darkblue;
     box-shadow: 20px 20px 30px -20px deepskyblue;
+    transition-duration: 0.4s;
     cursor: pointer;
+}
+
+.btn-desencriptar:hover {
+    background-color: #040c2c;
+    color: #08F13A;
+    transform: scale(1.1);
 }
 
 .mensaje {
     background-image: url("D:/1. CURSOS 2022/4. DEV/ONE_Oracle Next Education/NOTAS DE CHALLENGE 1 DECODER/DECODER/Muñeco verde.png");
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 200px;
+    background-position-y: 90px;
     background-size: 200px 200px;
     position: absolute;          /* lineas de posición */
     padding: 10px 5px 0px 15px;  
@@ -127,6 +141,23 @@ main {
     
 }
 
+.P1 {
+    position: absolute;
+    left: 800px;
+    top: 370px;
+    font-size: large;
+    color: yellow;
+    
+}
+
+.P2 {
+    position: absolute;
+    left: 760px;
+    top: 435px;
+    font-size: xx-small;
+    color: yellow;
+}
+
 .copiar {
     position: absolute;
     width: 200px;
@@ -137,5 +168,42 @@ main {
     border-radius: 15px;
     text-align: center;
     box-shadow: 20px 20px 30px -20px deepskyblue;
+    transition-duration: 0.4s;
     cursor: pointer;
+}
+
+.copiar:hover {
+    background-color: #08F13A;
+    color: #040c2c;
+    transform: scale(1.1);
+}
+
+.footer {
+    position: absolute;
+    top: 530px;
+    left: 176px;
+    bottom: 10px;
+    width: 430px;
+    height: 55px;
+    border: 3px solid deepskyblue;
+    border-radius: 15px;
+    
+}
+
+.byfor {
+    color: aqua;
+    font-size: x-small;
+    text-align: center;
+}
+
+.footer:hover {
+    
+    color: #040c2c;
+    transition-duration: 0.4s;
+    transform: scale(1.4);
+    box-shadow: 20px 20px 30px -20px deepskyblue;
+}
+
+.redes {
+    
 }

@@ -3,7 +3,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,55 +11,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Tai+Heritage+Pro:wght@700&display=swap" rel="stylesheet">
     <title>Decoder</title>
-
 </head>
 
 <body>
-
      <header>
         <img src="D:/1. CURSOS 2022/4. DEV/ONE_Oracle Next Education/NOTAS DE CHALLENGE 1 DECODER/DECODER/Logo_verde.png" alt="logo de alura" class="logo">
      </header> 
 
      <main>
-
-        <section class="section">
+        <section class="section"> <!--Me parece bien enumerar las secciones como sección 1, sección 2, etc. -->
 
             <h1>FAST ENCRYPTOR</h1>
 
             <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
 
             <div>
-
                 <h6 class="informacion">&#9888; Solo letras minúsculas y sin acentos</h6>
                 <h6 class="informacion2">&#9888; CLIQUEA de nuevo aquí para REINICIAR</h6>
-
             </div>
 
             <div class="botones">
-
                 <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
                 <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
-
             </div>
 
-        </section>
+        </section> <!--Esta sería la sección 2 por ejemplo-->
 
         <section>
 
             <textarea id="myInput" class="mensaje" cols="20" rows="10" placeholder=""></textarea>
 
             <div>
-
+                <p class="P1">Ningún mensaje <br> fue encontrado</p>
+                <p class="P2">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            
+            <div>
                 <button class="copiar" onclick="myFunction()">Copiar</button>
-                
             </div>
 
         </section>
 
      </main>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!--Enlace a la hoja de JS-->
 
+    <footer class="footer">
+        
+        <p class="byfor">Designed by JOSE MANUEL P.C.</p>
+        
+        <div class="redes">
+            
+        </div>
+    </footer>
 </body>
 
 </html>
