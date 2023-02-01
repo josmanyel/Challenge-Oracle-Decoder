@@ -73,7 +73,7 @@ main {
     position: absolute;
     width: 700px;
     height: 55px;
-    left: 180px;
+    left: 173px;
     top: 420px;
 }
 
@@ -144,7 +144,7 @@ main {
 .P1 {
     position: absolute;
     left: 800px;
-    top: 370px;
+    top: 390px;
     font-size: large;
     color: yellow;
     
@@ -153,13 +153,73 @@ main {
 .P2 {
     position: absolute;
     left: 760px;
-    top: 435px;
+    top: 455px;
     font-size: xx-small;
     color: yellow;
 }
 
-.copiar {
+/* Popup container - can be anything you want */
+.popup {
     position: absolute;
+    left: 763px;
+    top: 530px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 210px;
+    background-color: rgb(6, 210, 247);
+    color: darkblue;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 38%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(6, 210, 247) transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+.copiar {
+    
+    display: inline-block;
     width: 200px;
     height: 55px;
     left: 763px;
@@ -180,30 +240,61 @@ main {
 
 .footer {
     position: absolute;
-    top: 530px;
-    left: 176px;
-    bottom: 10px;
-    width: 430px;
-    height: 55px;
+    top: 512px;
+    left: 170px;
+    width: 420px;
+    height: 60px;
+    padding: 4px;
     border: 3px solid deepskyblue;
     border-radius: 15px;
-    
 }
 
 .byfor {
     color: aqua;
-    font-size: x-small;
-    text-align: center;
-}
-
-.footer:hover {
-    
-    color: #040c2c;
-    transition-duration: 0.4s;
-    transform: scale(1.4);
-    box-shadow: 20px 20px 30px -20px deepskyblue;
+    font-size: small;
+    text-align: left;
+    margin: 5px 0px 0px 0px;
 }
 
 .redes {
-    position: flex;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    height: 40px;
+    top: 20px;
+    left: 250px;
 }
+
+.fa-github {
+    display: inline-block;
+    font-size: 0px;
+    padding-bottom: 5px;
+    opacity: 0.1;    
+}
+
+.fa-github:hover {
+    opacity: 1.0;
+  }
+
+.fa-linkedin {
+    display: inline-block;
+    font-size: 0px;
+    padding-bottom: 5px;
+    opacity: 0.1;
+}
+
+.fa-linkedin:hover {
+    opacity: 1.0;
+  }
+
+.fa-instagram {
+    display: inline-block;
+    font-size: 0px;
+    padding-bottom: 5px;
+    opacity: 0.1;
+}
+
+.fa-instagram:hover {
+    opacity: 1.0;
+  }

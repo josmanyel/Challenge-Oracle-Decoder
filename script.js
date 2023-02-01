@@ -57,6 +57,9 @@ function myFunction() {    //función del botón de copiar
     // Copy the text inside the text field
     navigator.clipboard.writeText(copyText.value);
     
-    // Alert the copied text
-    alert("Texto Copiado: " + copyText.value);
+  }
+  // When the user clicks on div, open the popup
+  function myFunction2() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
   }
